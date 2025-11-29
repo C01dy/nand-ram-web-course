@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "title": "NAND to Tetris Interactive Guide",
+    "memory": "Computer Memory",
+    "clock": "Clock Generator",
+    "ticktock": "Tick-Tock Cycle",
+    "dff": "D Flip-Flop",
+    "bit": "Bit Chip",
+    "register": "16-bit Register",
+    "ram": "RAM",
+    "pc": "Program Counter"
+  },
+  "common": {
+    "play": "PLAY",
+    "pause": "PAUSE",
+    "step": "STEP",
+    "reset": "RESET",
+    "speed": "Speed",
+    "language": "Language"
+  },
+  "memory": {
+    "title": "Computer Memory Hierarchy",
+    "intro": "Computer memory is organized in a hierarchy based on speed and capacity. Understanding this hierarchy is crucial for building efficient computer systems.",
+    "registers": "Registers",
+    "registersDesc": "Fastest, smallest memory. Located in CPU. Access time: ~1 cycle",
+    "ram": "RAM (Random Access Memory)",
+    "ramDesc": "Main memory. Fast access to any location. Volatile storage",
+    "storage": "Storage (Disk)",
+    "storageDesc": "Slowest, largest capacity. Persistent storage",
+    "clickToExplore": "Click on each level to explore"
+  },
+  "clock": {
+    "title": "Clock Generator",
+    "intro": "The clock generator produces a periodic signal that synchronizes all operations in a computer. It creates a square wave that alternates between HIGH (1) and LOW (0) states.",
+    "frequency": "Frequency",
+    "period": "Period",
+    "currentState": "Current State",
+    "high": "HIGH",
+    "low": "LOW"
+  },
+  "ticktock": {
+    "title": "Tick-Tock Cycle",
+    "intro": "The clock cycle is divided into two phases: TICK and TOCK. This two-phase cycle allows sequential circuits to read inputs during one phase and update outputs during another.",
+    "tick": "TICK Phase",
+    "tickDesc": "During TICK, circuits prepare for changes. Inputs are read and processed.",
+    "tock": "TOCK Phase", 
+    "tockDesc": "During TOCK, outputs are updated based on inputs from TICK phase.",
+    "cycle": "Cycle",
+    "phase": "Phase"
+  },
+  "dff": {
+    "title": "D Flip-Flop (DFF)",
+    "intro": "The D Flip-Flop is the fundamental building block of sequential logic. It stores one bit of information and updates its output only on clock edges.",
+    "input": "Input (D)",
+    "output": "Output (Q)",
+    "clock": "Clock",
+    "behavior": "Behavior",
+    "behaviorDesc": "The output Q takes the value of input D at the rising edge of the clock signal. Between clock edges, Q remains constant regardless of changes to D.",
+    "truthTable": "Truth Table",
+    "timingDiagram": "Timing Diagram"
+  },
+  "bit": {
+    "title": "1-Bit Register (Bit Chip)",
+    "intro": "A 1-bit register is built using a DFF and a multiplexer. It can store one bit and has a LOAD signal to control when to update the stored value.",
+    "load": "LOAD",
+    "in": "IN",
+    "out": "OUT",
+    "stored": "Stored Value",
+    "operation": "Operation",
+    "operationDesc": "When LOAD=1, the register stores the input value. When LOAD=0, it maintains its current value."
+  },
+  "register": {
+    "title": "16-Bit Register",
+    "intro": "A 16-bit register consists of 16 one-bit registers working in parallel. It can store a 16-bit value (0-65535).",
+    "binary": "Binary",
+    "decimal": "Decimal",
+    "hexadecimal": "Hexadecimal",
+    "enterValue": "Enter value (0-65535)",
+    "load": "LOAD",
+    "currentValue": "Current Value"
+  },
+  "ram": {
+    "title": "RAM (Random Access Memory)",
+    "intro": "RAM is an array of registers. Each register has an address, allowing direct access to any location. The address determines which register to read from or write to.",
+    "address": "Address",
+    "input": "Input",
+    "output": "Output",
+    "load": "LOAD",
+    "size": "RAM Size",
+    "registers": "registers",
+    "selectAddress": "Select address to read/write"
+  },
+  "pc": {
+    "title": "Program Counter (PC)",
+    "intro": "The Program Counter is a special register that keeps track of the address of the next instruction to execute. It supports three operations: increment, load (jump), and reset.",
+    "currentValue": "Current Value",
+    "inc": "INCREMENT",
+    "load": "LOAD",
+    "reset": "RESET",
+    "jumpAddress": "Jump Address",
+    "incDesc": "Increment PC by 1",
+    "loadDesc": "Load a specific address (jump)",
+    "resetDesc": "Reset PC to 0"
+  }
+}
